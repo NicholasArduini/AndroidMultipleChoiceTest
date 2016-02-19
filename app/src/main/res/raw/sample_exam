@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<exam>
+    <student>
+    <email>arduininicholas@gmail.com</email>
+    <name>Blank</name>
+    <studentNumber>Blank</studentNumber>
+    </student>
+
+    <question>
+        <question_text>Which movie is not part of the Marvel Cinematic Universe</question_text>
+        <aAnswer>Guardians of the Galaxy</aAnswer>
+        <bAnswer>The Amazing Spider-Man</bAnswer>
+        <cAnswer>Captain America</cAnswer>
+        <dAnswer>Iron Man</dAnswer>
+        <eAnswer>Ant-Man</eAnswer>
+    </question>
+
+    <question>
+        <question_text>How many Iron Man movies are there</question_text>
+        <aAnswer>One</aAnswer>
+        <bAnswer>Two</bAnswer>
+        <cAnswer>Three</cAnswer>
+        <dAnswer>Four</dAnswer>
+        <eAnswer>Five</eAnswer>
+    </question>
+
+    <question>
+        <question_text>Who is going to be the major villain in the movie Infinity War</question_text>
+        <aAnswer>Thanos</aAnswer>
+        <bAnswer>Loki</bAnswer>
+        <cAnswer>Red Skull</cAnswer>
+        <dAnswer>M.O.D.O.K.</dAnswer>
+        <eAnswer>Green Goblin</eAnswer>
+    </question>
+
+    <question>
+        <question_text>Which movie does not come out in 2016</question_text>
+        <aAnswer>Deadpool</aAnswer>
+        <bAnswer>Captain America: Civil War</bAnswer>
+        <cAnswer>Doctor Strange</cAnswer>
+        <dAnswer>Guardians of the Galaxy 2</dAnswer>
+        <eAnswer>X-Men Apocalypse</eAnswer>
+    </question>
+
+    <question>
+        <question_text>Which movie has Chris Evans not stared in</question_text>
+        <aAnswer>Fantastic Four</aAnswer>
+        <bAnswer>Captain America</bAnswer>
+        <cAnswer>The Avengers</cAnswer>
+        <dAnswer>The Avengers Age of Ultron</dAnswer>
+        <eAnswer>Iron Man</eAnswer>
+    </question>
+
+    <question>
+        <question_text>Who is casted to play Spider-Man in the MCU</question_text>
+        <aAnswer>Joseph Gordon-Levitt</aAnswer>
+        <bAnswer>Toby Maguire</bAnswer>
+        <cAnswer>Tom Hollands</cAnswer>
+        <dAnswer>Andrew Garfield</dAnswer>
+        <eAnswer>Chris Pratt</eAnswer>
+
+    </question>
+
+    <question>
+        <question_text>Which is a marvel movie</question_text>
+        <aAnswer>Bataman Begins</aAnswer>
+        <bAnswer>Howard the Duck</bAnswer>
+        <cAnswer>Man of Steel</cAnswer>
+        <dAnswer>Green Lantern</dAnswer>
+        <eAnswer>Suicide Squad</eAnswer>
+    </question>
+
+    <question>
+        <question_text>Which movie was made first</question_text>
+        <aAnswer>The Incredible Hulk</aAnswer>
+        <bAnswer>Thor</bAnswer>
+        <cAnswer>Ant-Man</cAnswer>
+        <dAnswer>Captain America</dAnswer>
+        <eAnswer>Iron Man</eAnswer>
+    </question>
+
+    <question>
+        <question_text>What is Daredevil's real name</question_text>
+        <aAnswer>Foggy Nelson</aAnswer>
+        <bAnswer>Clint Barton</bAnswer>
+        <cAnswer>Matthew Murdock</cAnswer>
+        <dAnswer>Peter Parker</dAnswer>
+        <eAnswer>Steve Rogers</eAnswer>
+    </question>
+
+    <question>
+        <question_text>Who didn't star in an X-Men movie</question_text>
+        <aAnswer>Hugh Jackman</aAnswer>
+        <bAnswer>Halle Berry</bAnswer>
+        <cAnswer>Patrick Stewart</cAnswer>
+        <dAnswer>Clark Gregg</dAnswer>
+        <eAnswer>Michael Fassbender</eAnswer>
+    </question>
+</exam>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Multiple Choice Test</string>
+    <string name="quiz_name">Marvel Test</string>
+    <string name="action_settings">Settings</string>
+</resources>
