@@ -26,63 +26,69 @@
         android:paddingBottom="5dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:id="@+id/aButton"
-        android:layout_below="@+id/question_text_view"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:id="@+id/bButton"
-        android:layout_below="@+id/aButton"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:id="@+id/cButton"
-        android:layout_below="@+id/bButton"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:id="@+id/dButton"
-        android:layout_below="@+id/cButton"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:id="@+id/eButton"
-        android:layout_below="@+id/dButton"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="back"
+        android:text="@string/backButtonText"
         android:id="@+id/backButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="false"
         android:drawableLeft="@drawable/arrow_left"
         android:drawablePadding="4dp"
-        android:layout_marginTop="150dp"
-        android:paddingRight="20dp" />
+        android:paddingRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="false"
+        android:layout_alignBottom="@+id/nextButton" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButtons"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/question_text_view"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eButton"
+            android:checked="false" />
+
+    </RadioGroup>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="@string/nextButtonText"
         android:id="@+id/nextButton"
         android:drawableRight="@drawable/arrow_right"
         android:drawablePadding="4dp"
-        android:clickable="false"
-        android:layout_alignTop="@+id/backButton"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/question_text_view"
+        android:layout_alignEnd="@+id/question_text_view"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_alignBottom="@+id/radioButtons" />
 
 </RelativeLayout>

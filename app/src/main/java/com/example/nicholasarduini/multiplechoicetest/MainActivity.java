@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -20,11 +22,12 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    private Button aButton;
-    private Button bButton;
-    private Button cButton;
-    private Button dButton;
-    private Button eButton;
+    private RadioButton aButton;
+    private RadioButton bButton;
+    private RadioButton cButton;
+    private RadioButton dButton;
+    private RadioButton eButton;
+    private RadioGroup radioButtons;
     private Button backButton;
     private Button nextButton;
 
@@ -51,21 +54,18 @@ public class MainActivity extends AppCompatActivity {
 
     //press the appropriate button when a question is answered
     public void buttonPress(String answer){
-        aButton.setPressed(false);
-        bButton.setPressed(false);
-        cButton.setPressed(false);
-        dButton.setPressed(false);
-        eButton.setPressed(false);
         if (answer.equals(States.STATE_A_ANSWER)) {
-            aButton.setPressed(true);
+            aButton.toggle();
         } else if (answer.equals(States.STATE_B_ANSWER)) {
-            bButton.setPressed(true);
+            bButton.toggle();
         } else if (answer.equals(States.STATE_C_ANSWER)) {
-            cButton.setPressed(true);
+            cButton.toggle();
         } else if (answer.equals(States.STATE_D_ANSWER)) {
-            dButton.setPressed(true);
+            dButton.toggle();
         } else if (answer.equals(States.STATE_E_ANSWER)) {
-            eButton.setPressed(true);
+            eButton.toggle();
+        } else {
+            radioButtons.clearCheck();
         }
         questions.get(questionIndex).setQuessedAnswer(answer);
     }
@@ -120,11 +120,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        aButton = (Button) findViewById(R.id.aButton);
-        bButton = (Button) findViewById(R.id.bButton);
-        cButton = (Button) findViewById(R.id.cButton);
-        dButton = (Button) findViewById(R.id.dButton);
-        eButton = (Button) findViewById(R.id.eButton);
+        aButton = (RadioButton) findViewById(R.id.aButton);
+        bButton = (RadioButton) findViewById(R.id.bButton);
+        cButton = (RadioButton) findViewById(R.id.cButton);
+        dButton = (RadioButton) findViewById(R.id.dButton);
+        eButton = (RadioButton) findViewById(R.id.eButton);
+        radioButtons = (RadioGroup) findViewById(R.id.radioButtons);
         backButton = (Button) findViewById(R.id.backButton);
         nextButton = (Button) findViewById(R.id.nextButton);
 
